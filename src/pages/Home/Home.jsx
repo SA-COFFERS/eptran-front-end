@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import gamePicture from '../../assets/games.png';
 import paralelograms from '../../assets/paralelograms.png';
 import aboutUsPicture from '../../assets/about-us.png';
@@ -30,7 +32,7 @@ function Home() {
               <h2>
                 {' '}
                 Educar para
-                <strong>SALVAR VIDAS</strong>
+                <strong> SALVAR VIDAS</strong>
               </h2>
             </section>
           </div>
@@ -44,7 +46,7 @@ function Home() {
               <a href="pages/jogos.html"><img src={gamePicture} alt="Jogos" /></a>
             </section>
             <section className="pictures-container">
-              <a href="pages/noticias.html"><img src={newsPicture} alt="Notícias" /></a>
+              <Link to="/noticias"><img src={newsPicture} alt="Notícias" /></Link>
               <p>Notícias</p>
             </section>
           </div>

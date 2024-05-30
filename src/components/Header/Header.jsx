@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import logoPrefeitura from '../../assets/logo-prefeitura-horizontal.png';
 
 import './Header.css';
@@ -73,12 +75,12 @@ function Header() {
         </header>
         <div className="open-menu">
           <div className="top-open-menu">
-            <a href="/">
+            <Link to="/">
               <section className="open-menu-options">
                 <p className="bx bx-home-alt" />
                 <p>Início</p>
               </section>
-            </a>
+            </Link>
             <section className="open-menu-options">
               <p className="bx bx-info-circle" />
               <p>Sobre nós</p>
@@ -89,12 +91,12 @@ function Header() {
                 <p>Jogos</p>
               </section>
             </a>
-            <a href="pages/noticias.html">
+            <Link to="/noticias">
               <section className="open-menu-options">
                 <p className="bx bx-news" />
                 <p>Notícias</p>
               </section>
-            </a>
+            </Link>
           </div>
 
           <a href="./pages/login.html">

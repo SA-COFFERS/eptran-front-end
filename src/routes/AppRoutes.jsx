@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import Home from '../pages/Home/Home';
+import News from '../pages/News/News';
 // import { AuthProvider } from '../context/auth';
 // import PrivateRoute from './PrivateRoutes';
 
@@ -15,6 +16,7 @@ function AppRoutes() {
       {/* <AuthProvider> */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/noticias" element={<News />} />
       </Routes>
       {/* </AuthProvider> */}
     </Router>
