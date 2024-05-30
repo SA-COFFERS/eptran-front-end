@@ -13,12 +13,12 @@ function AppRoutes() {
   return (
     <Router>
       {/* <AuthProvider> */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       {/* </AuthProvider> */}
     </Router>
   );
-};
+}
 
 export default AppRoutes;

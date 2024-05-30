@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import { Navigate } from 'react-router-dom';
 import { AuthContext } from '../context/auth';
-import Loading from '../components/Loading/Loading';
 
+// eslint-disable-next-line react/prop-types
 export default function PrivateRoute({ children }) {
   const { signed, loading } = useContext(AuthContext);
   if (loading) {
-    return <Loading />;
+    return <div>Loading</div>;
   }
 
   if (!signed) {
