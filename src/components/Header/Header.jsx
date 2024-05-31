@@ -10,7 +10,7 @@ function Header() {
     const menu = document.querySelector('.open-menu');
     const regularHeader = document.querySelector('#regular-header');
     const openHeader = document.querySelector('#open-header');
-    const container = document.querySelectorAll('.container');
+    const container = document.querySelector('.container');
     const darkSide = document.querySelector('.dark-side');
 
     const input = document.querySelectorAll('.dark-input');
@@ -23,9 +23,7 @@ function Header() {
       input.forEach((e) => {
         e.classList.add('dark-mode');
       });
-      container.forEach((e) => {
-        e.classList.add('dark-mode');
-      });
+      container.classList.add('dark-mode');
     };
 
     const closeMenu = () => {
@@ -35,9 +33,7 @@ function Header() {
       input.forEach((e) => {
         e.classList.remove('dark-mode');
       });
-      container.forEach((e) => {
-        e.classList.remove('dark-mode');
-      });
+      container.classList.remove('dark-mode');
       menu.style.left = '-70%';
     };
 
@@ -47,14 +43,12 @@ function Header() {
       input.forEach((e) => {
         e.classList.remove('dark-mode');
       });
-      container.forEach((e) => {
-        e.classList.remove('dark-mode');
-      });
+      container.classList.remove('dark-mode');
       menu.style.left = '-70%';
     };
 
     window.addEventListener('resize', changeResolution);
-    document.body.addEventListener('scroll', closeMenu);
+    document.addEventListener('scroll', closeMenu);
     document.querySelector('.open').addEventListener('click', openMenu);
     document.querySelectorAll('.close').forEach((e) => {
       e.addEventListener('click', closeMenu);
@@ -85,12 +79,12 @@ function Header() {
               <p className="bx bx-info-circle" />
               <p>Sobre nós</p>
             </section>
-            <a href="pages/jogos.html">
+            <Link to="/jogos">
               <section className="open-menu-options">
                 <p className="bx bx-joystick" />
                 <p>Jogos</p>
               </section>
-            </a>
+            </Link>
             <Link to="/noticias">
               <section className="open-menu-options">
                 <p className="bx bx-news" />
@@ -99,12 +93,12 @@ function Header() {
             </Link>
           </div>
 
-          <a href="./pages/login.html">
+          <Link to="/conta">
             <section className="open-menu-options user">
               <p className="bx bx-user-circle" />
               <p>Perfil</p>
             </section>
-          </a>
+          </Link>
 
         </div>
         <div className="dark-side hide close" />

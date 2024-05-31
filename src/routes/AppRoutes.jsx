@@ -7,6 +7,8 @@ import {
 
 import Home from '../pages/Home/Home';
 import News from '../pages/News/News';
+import Games from '../pages/Games/Games';
+import Account from '../pages/Account/Account';
 // import { AuthProvider } from '../context/auth';
 // import PrivateRoute from './PrivateRoutes';
 
@@ -17,6 +19,8 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/noticias" element={<News />} />
+        <Route path="/jogos" element={<Games />} />
+        <Route path="/conta" element={<Account />} />
       </Routes>
       {/* </AuthProvider> */}
     </Router>

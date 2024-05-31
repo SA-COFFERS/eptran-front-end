@@ -7,7 +7,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div className="container footer">
+    <div className="footer">
       <footer>
         <div className="logos">
           <img src={logoPrefeitura} alt="logo" className="logo-jlle" />
