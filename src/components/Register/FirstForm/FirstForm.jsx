@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './FirstForm.css';
 
-function FirstForm() {
+function FirstForm({ setSecondForm }) {
   return (
     <label className="first-form">
       <form>
@@ -17,7 +18,7 @@ function FirstForm() {
           className="dark-input"
         />
         <input type="password" id="confirmpassword" className="dark-input" placeholder=" Confirme a senha: " />
-        <button className="color-button" type="button"><a href="cadastro2.html">Seguinte</a></button>
+        <button className="color-button" type="button" onClick={() => setSecondForm(true)}>Seguinte</button>
         <Link to="/login">
           <p>
             Já possui uma conta?/Login
