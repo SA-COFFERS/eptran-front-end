@@ -11,13 +11,15 @@ function News() {
   return (
     <>
       <Header />
-      <main style={{ paddingTop: '70px' }}>
-        <Carousel />
-        <NewsContainer text="Lançamos o novo jogo lorem ipsum de consientização do trânsito" img={img} date="09/11/2024 12:45" />
-        <NewsContainer text="Lançamos o novo jogo lorem ipsum de consientização do trânsito" img={img} date="09/11/2024 12:45" />
-        <NewsContainer text="Lançamos o novo jogo lorem ipsum de consientização do trânsito" img={img} date="09/11/2024 12:45" />
-      </main>
-      <Footer />
+      <div className="container">
+        <main style={{ paddingTop: '70px' }}>
+          <Carousel />
+          <NewsContainer text="Lançamos o novo jogo lorem ipsum de consientização do trânsito" img={img} date="09/11/2024 12:45" />
+          <NewsContainer text="Lançamos o novo jogo lorem ipsum de consientização do trânsito" img={img} date="09/11/2024 12:45" />
+          <NewsContainer text="Lançamos o novo jogo lorem ipsum de consientização do trânsito" img={img} date="09/11/2024 12:45" />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

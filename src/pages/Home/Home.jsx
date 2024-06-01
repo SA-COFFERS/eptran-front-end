@@ -38,12 +38,12 @@ function Home() {
           </div>
           <div className="pictures">
             <section className="pictures-container">
-              <img src={aboutUsPicture} alt="" />
+              <Link to="/sobre-nos"><img src={aboutUsPicture} alt="" /></Link>
               <p>Sobre nós</p>
             </section>
             <section className="pictures-container">
               <p>Jogos</p>
-              <a href="pages/jogos.html"><img src={gamePicture} alt="Jogos" /></a>
+              <Link to="/jogos"><img src={gamePicture} alt="Jogos" /></Link>
             </section>
             <section className="pictures-container">
               <Link to="/noticias"><img src={newsPicture} alt="Notícias" /></Link>
@@ -51,8 +51,8 @@ function Home() {
             </section>
           </div>
         </main>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

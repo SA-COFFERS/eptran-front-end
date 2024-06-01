@@ -1,0 +1,133 @@
+.first-form{
+
+  a{
+    text-decoration: none;
+  }
+
+  .container{
+    padding-top: 100px;
+  }
+
+  main{
+    margin: 80px auto;
+    max-width: 750px;
+    border-radius: 15px;
+    border:1px solid black;
+
+
+
+  }
+
+  .color-button{
+    background-color: #05466C;
+    border: none;
+
+  }
+
+  form{
+    .main-text{
+        font-size: 2em;
+        padding: 20px 10%;
+        color: black;
+        text-align: justify;
+    }
+
+    .form-text{
+        width: 80%;
+        margin: auto;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px;
+
+    input, select{
+        width: 80%;
+        margin: auto;
+        height: 3em;
+        border-width: 0.5px;
+        border-radius: 5px;
+    }
+
+    button{
+        color: white;
+        padding: 10px;
+        border-radius: 2px;
+        width: 150px;
+        margin: 20px auto;
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .sex-options-div{
+
+
+        input{
+            width: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sex-option{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        display: flex;
+        flex-direction: column;
+
+        .sex-options-section{
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+        }
+    }
+    p{
+        color: #367BBC;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    main {
+        margin: 25px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    button.color-button {
+        width: auto;
+    }
+
+    .main-text{
+        font-size: 1.2em !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    main {
+        margin: 25px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+    button.color-button {
+        width: auto;
+    }
+
+    .main-text{
+        font-size: 1.2em !important;
+    }
+  }
+}
