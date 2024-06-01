@@ -26,3 +26,7 @@ input, select{
 main{
     padding: 100px 0;
 }
+
+.container{
+  min-height: 100vh;
+}
