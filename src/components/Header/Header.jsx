@@ -75,10 +75,12 @@ function Header() {
                 <p>Início</p>
               </section>
             </Link>
-            <section className="open-menu-options">
-              <p className="bx bx-info-circle" />
-              <p>Sobre nós</p>
-            </section>
+            <Link to="/sobre-nos">
+              <section className="open-menu-options">
+                <p className="bx bx-info-circle" />
+                <p>Sobre nós</p>
+              </section>
+            </Link>
             <Link to="/jogos">
               <section className="open-menu-options">
                 <p className="bx bx-joystick" />

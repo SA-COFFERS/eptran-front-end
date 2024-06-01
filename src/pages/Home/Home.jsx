@@ -38,7 +38,7 @@ function Home() {
           </div>
           <div className="pictures">
             <section className="pictures-container">
-              <img src={aboutUsPicture} alt="" />
+              <Link to="/sobre-nos"><img src={aboutUsPicture} alt="" /></Link>
               <p>Sobre nós</p>
             </section>
             <section className="pictures-container">
