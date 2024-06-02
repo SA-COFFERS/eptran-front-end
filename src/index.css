@@ -11,18 +11,6 @@
     z-index: 2;
 }
 
-a{
-    z-index: 2;
-}
-
-button{
-    z-index: 2;
-}
-
-input, select{
-    z-index: 2;
-}
-
 main{
     padding: 100px 0;
 }

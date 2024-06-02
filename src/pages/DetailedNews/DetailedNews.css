@@ -1,15 +1,42 @@
 .detailed-news{
+  margin: 0 20px;
+  h1{
+    font-size: 1.5em;
+    padding-bottom: 15px;
+  }
 
-}
+  .subtitle{
+    width: 100%;
+    font-size: 1.1em;
+  }
 
-.news-date{
-  color: #929292;
-  font-size: 1.1em;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 10px;
-  i{
-      scale: 1.6;
+  .news-date{
+    padding: 10px 0;
+    color: #929292;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    i{
+      scale: 1.5;
+      padding-bottom: 1px;
+    }
+  }
+
+  img{
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  p{
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 10px 0;
+    text-align: justify;
+    width: 85%;
+    margin: auto;
   }
 }
+
