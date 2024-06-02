@@ -2,6 +2,7 @@
   margin: 0 20px;
   h1{
     font-size: 1.5em;
+    font-weight: 500;
     padding-bottom: 15px;
   }
 
@@ -35,7 +36,7 @@
     font-weight: 300;
     padding: 10px 0;
     text-align: justify;
-    width: 85%;
+    width: 90%;
     margin: auto;
   }
 }
