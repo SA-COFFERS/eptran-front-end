@@ -3,7 +3,7 @@ import React from 'react';
 
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import newsImg from '../../assets/games.png';
+import newsImg from '../../assets/games-big-picture.png';
 
 import './DetailedNews.css';
 
