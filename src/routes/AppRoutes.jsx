@@ -12,6 +12,7 @@ import Account from '../pages/Account/Account';
 import Register from '../pages/Register/Register';
 import Login from '../pages/Login/Login';
 import AboutUs from '../pages/AboutUs/AboutUs';
+import DetailedNews from '../pages/DetailedNews/DetailedNews';
 // import { AuthProvider } from '../context/auth';
 // import PrivateRoute from './PrivateRoutes';
 
@@ -27,6 +28,7 @@ function AppRoutes() {
         <Route path="/cadastro" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sobre-nos" element={<AboutUs />} />
+        <Route path="/noticias/:id" element={<DetailedNews />} />
       </Routes>
       {/* </AuthProvider> */}
     </Router>

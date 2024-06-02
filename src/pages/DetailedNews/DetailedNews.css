@@ -1,0 +1,15 @@
+.detailed-news{
+
+}
+
+.news-date{
+  color: #929292;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  i{
+      scale: 1.6;
+  }
+}
