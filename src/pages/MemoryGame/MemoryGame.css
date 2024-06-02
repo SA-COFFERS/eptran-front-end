@@ -1,0 +1,102 @@
+.memory-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0E2E41;
+}
+
+.memory-game-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background: #05466B;
+  padding: 40px 60px;
+}
+
+.memory-game-container.win {
+  scale: 0;
+}
+
+.memory-game-container.win.active {
+  scale: 1;
+}
+
+.memory-game h2 {
+  font-size: 3em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.memory-game .reset {
+  padding: 15px 20px;
+  color: #267c65;
+  background: #fff;
+  border: none;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.memory-game .reset:focus {
+  color: #fff;
+  background: #267c65;
+}
+
+.memory-game .game {
+  width: 440px;
+  height: 440px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.memory-game .item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  background: #fff;
+  transition: 0.75s;
+}
+
+.memory-game .item.boxOpen {
+  transform: rotateY(0deg);
+}
+
+.memory-game .item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #0E2E41;
+  transition: 0.75s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+
+.memory-game .item.boxOpen::after,
+.memory-game .item.boxMatch::after {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 600px) {
+  .memory-game-container{
+    text-align: center;
+    scale: 0.6;
+  }
+  .win{
+    scale: 0.8 !important;
+    text-align: center;
+  }
+}

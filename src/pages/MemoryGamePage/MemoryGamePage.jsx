@@ -17,7 +17,7 @@ function MemoryGamePage() {
         <main className="detailed-game-page">
           <img src={GameImg} alt="" />
           <h1>Jogo da memória</h1>
-          <Link to>
+          <Link to="/jogo-da-memoria">
             <div className="play-button">
               <i className="bx bx-play" />
               <h3>PLAY</h3>
