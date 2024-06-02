@@ -16,6 +16,7 @@ function Header() {
     const input = document.querySelectorAll('.dark-input');
 
     const openMenu = () => {
+      container.style.zIndex = '0';
       darkSide.classList.remove('hide');
       menu.style.left = '0';
       regularHeader.classList.add('hide');
@@ -27,6 +28,7 @@ function Header() {
     };
 
     const closeMenu = () => {
+      container.style.zIndex = '1';
       darkSide.classList.add('hide');
       openHeader.classList.add('hide');
       regularHeader.classList.remove('hide');
@@ -38,6 +40,7 @@ function Header() {
     };
 
     const changeResolution = () => {
+      container.style.zIndex = '1';
       openHeader.classList.add('hide');
       regularHeader.classList.remove('hide');
       input.forEach((e) => {

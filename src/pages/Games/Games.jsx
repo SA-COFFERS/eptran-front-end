@@ -1,6 +1,7 @@
 import React from 'react';
 import './Games.css';
 
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import gameImg from '../../assets/games.png';
@@ -16,10 +17,12 @@ function Games() {
             <div className="jogos-infantis">
               <h3>Infantis </h3>
               <div className="games-container">
-                <div className="game-container">
-                  <img src={gameImg} alt="" />
-                  <h2>Jogo da memória</h2>
-                </div>
+                <Link to="/jogos/jogo-da-memoria">
+                  <div className="game-container">
+                    <img src={gameImg} alt="" />
+                    <h2>Jogo da memória</h2>
+                  </div>
+                </Link>
                 <div className="game-container">
                   <img src={gameImg} alt="" />
                   <h2>Colorir</h2>

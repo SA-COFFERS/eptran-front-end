@@ -12,6 +12,9 @@ import Account from '../pages/Account/Account';
 import Register from '../pages/Register/Register';
 import Login from '../pages/Login/Login';
 import AboutUs from '../pages/AboutUs/AboutUs';
+import DetailedNews from '../pages/DetailedNews/DetailedNews';
+import MemoryGamePage from '../pages/MemoryGamePage/MemoryGamePage';
+import MemoryGame from '../pages/MemoryGame/MemoryGame';
 // import { AuthProvider } from '../context/auth';
 // import PrivateRoute from './PrivateRoutes';
 
@@ -23,10 +26,13 @@ function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/noticias" element={<News />} />
         <Route path="/jogos" element={<Games />} />
+        <Route path="/jogos/jogo-da-memoria" element={<MemoryGamePage />} />
+        <Route path="/jogo-da-memoria" element={<MemoryGame />} />
         <Route path="/conta" element={<Account />} />
         <Route path="/cadastro" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sobre-nos" element={<AboutUs />} />
+        <Route path="/noticias/:id" element={<DetailedNews />} />
       </Routes>
       {/* </AuthProvider> */}
     </Router>

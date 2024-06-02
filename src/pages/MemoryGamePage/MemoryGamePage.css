@@ -1,0 +1,75 @@
+.detailed-game-page{
+  padding-top: 70px;
+
+  img{
+    width: 100%;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 500;
+    padding: 20px 0;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  h2{
+    width: 85%;
+    margin: auto;
+    font-weight: 500;
+    padding: 20px 0;
+  }
+
+  p{
+    width: 85%;
+    margin: auto;
+    font-weight: 300;
+    font-size: 1.1em;
+    text-align: justify;
+  }
+
+}
+
+.play-button{
+  margin: auto;
+  background-color: #30B235;
+  width: 240px;
+  height: 60px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i{
+    padding-right: 18px;
+    scale: 4;
+  }
+
+  h3{
+    font-size: 2em;
+    font-weight: 600;
+  }
+}
+
+.control-section{
+  padding: 20px 0;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+
+  img{
+    width: 60px;
+  }
+
+  p{
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+}
