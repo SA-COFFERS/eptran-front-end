@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Link } from 'react';
 import Header from '../../components/Header/Header';
 
 import cameraIcon from '../../assets/camera-icon.png';
@@ -23,14 +23,16 @@ function Account() {
             </div>
           </section>
 
-          <section className="options">
-            <i className="bx bx-notepad" />
-            <div className="section-texts">
-              <h3>Dados Pessoais</h3>
-              <p>Edite as informações de seu registro aqui</p>
-            </div>
-            <i className="bx bx-chevron-right" />
-          </section>
+          <Link to="/conta/detalhes">
+            <section className="options">
+              <i className="bx bx-notepad" />
+              <div className="section-texts">
+                <h3>Dados Pessoais</h3>
+                <p>Edite as informações de seu registro aqui</p>
+              </div>
+              <i className="bx bx-chevron-right" />
+            </section>
+          </Link>
 
           <section className="options">
             <i className="bx bx-joystick" />

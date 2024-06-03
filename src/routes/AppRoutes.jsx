@@ -15,6 +15,7 @@ import AboutUs from '../pages/AboutUs/AboutUs';
 import DetailedNews from '../pages/DetailedNews/DetailedNews';
 import MemoryGamePage from '../pages/MemoryGamePage/MemoryGamePage';
 import MemoryGame from '../pages/MemoryGame/MemoryGame';
+import AccountInfos from '../pages/AccountInfos/AccountInfos';
 // import { AuthProvider } from '../context/auth';
 // import PrivateRoute from './PrivateRoutes';
 
@@ -29,6 +30,7 @@ function AppRoutes() {
         <Route path="/jogos/jogo-da-memoria" element={<MemoryGamePage />} />
         <Route path="/jogo-da-memoria" element={<MemoryGame />} />
         <Route path="/conta" element={<Account />} />
+        <Route path="/conta/detalhes" element={<AccountInfos />} />
         <Route path="/cadastro" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sobre-nos" element={<AboutUs />} />
