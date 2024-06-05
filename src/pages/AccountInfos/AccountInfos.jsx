@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/button-has-type */
-import React, { Link } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header/Header';
 

@@ -1,9 +1,9 @@
 .account-infos-container{
 
     main{
+        margin: auto;
         display: flex;
         flex-direction: column;
-        margin:  20% 10%;
         gap: 40px;
         width: 75%;
     }
@@ -16,6 +16,7 @@
     
     h2{
         font-size: 18px;
+        color: black;
     }
     
     input, select{
@@ -45,6 +46,7 @@
         text-align: center;
         margin: auto;
         color: #05466C;
+        align-items: center;
     }
     
     .forget-password a{
@@ -104,7 +106,11 @@
     h2, h3{
         font-weight: 540;
     }
-    
-    
 
+    .email{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 }

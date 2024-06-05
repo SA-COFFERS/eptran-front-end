@@ -1,4 +1,5 @@
-import React, { Link } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 
 import cameraIcon from '../../assets/camera-icon.png';
