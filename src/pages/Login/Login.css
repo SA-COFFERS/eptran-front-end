@@ -19,11 +19,12 @@ form{
   flex-direction: column;
   gap: 30px;
   margin: 20px;
+
   .main-text{
-      font-size: 2em;
       padding: 20px 10%;
       color: black;
-      text-align: justify;
+      text-align: center;
+      font-weight: bold;
   }
 
   .form-text{
@@ -82,9 +83,10 @@ form{
   }
 
   .forget-password{
-      margin-left: 10%;
+      margin: auto;
       color: #706c6c;
-      font-size: 13px;
+      font-size: 15px;
+
 
   }
 

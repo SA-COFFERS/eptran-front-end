@@ -21,10 +21,10 @@ function Login() {
               placeholder="  Senha:"
               className="dark-input"
             />
-            <Link className="forget-password" to>Esqueci minha senha</Link>
             <button>
               Seguinte
             </button>
+            <Link className="forget-password" to>Esqueci minha senha</Link>
             <Link to="/cadastro">
               <p className="login-text">
                 Não possui uma conta?/cadastro
