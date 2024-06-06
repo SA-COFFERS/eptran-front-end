@@ -4,11 +4,11 @@
         margin: auto;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
         width: 75%;
     }
     
-    h1{
+    .title h1{
         text-align: center;
         font-size: 25px;
         text-decoration: underline;
@@ -17,6 +17,7 @@
     h2{
         font-size: 18px;
         color: black;
+        width: 100%;
     }
     
     input, select{
@@ -28,7 +29,7 @@
     
     label{
         font-size: 19px;
-        margin: 9%;
+        margin: 10%;
     }
     
     .sex-option{
@@ -38,7 +39,7 @@
     .sex-options-section{
         display: flex;
         margin: auto;
-        gap: 30px;
+        gap: 20px;
     }
     
     .forget-password{
@@ -55,6 +56,7 @@
         text-align: center;
         cursor: pointer;
         align-items: center;
+        
     }
     
     .buttons{
@@ -62,7 +64,7 @@
         flex-direction: column;
         margin: auto;
         gap: 10px;
-        width: 65%;
+        width: 70%;
     }
     
     .save-button{
@@ -81,7 +83,6 @@
         border: solid black 1px; 
         padding: 10px 20px; 
         text-align: center;
-        display: inline-block;
         font-size: 16px;
         border-radius: 5px;
     }
@@ -110,6 +111,8 @@
     .email{
         display: flex;
         flex-direction: column;
+        padding: 0;
+        gap: 0;
     }
 
     

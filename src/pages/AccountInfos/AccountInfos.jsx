@@ -14,7 +14,9 @@ function AccountInfos() {
       <Header />
       <div className="container account-infos-container">
         <main>
-          <h1>Informações Pessoais</h1>
+          <div className="title">
+            <h1>Informações Pessoais</h1>
+          </div>
           <div className="email">
             <h2>Email</h2>
             <input type="email" />
