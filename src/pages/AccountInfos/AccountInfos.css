@@ -1,0 +1,119 @@
+.account-infos-container{
+
+    main{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 75%;
+    }
+    
+    .title h1{
+        text-align: center;
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    
+    h2{
+        font-size: 18px;
+        color: black;
+        width: 100%;
+    }
+    
+    input, select{
+        width: 100%;
+        border-radius: 5px;
+        border-width: thin;
+        height: 25px;
+    }
+    
+    label{
+        font-size: 19px;
+        margin: 10%;
+    }
+    
+    .sex-option{
+        display: flex;
+    }
+    
+    .sex-options-section{
+        display: flex;
+        margin: auto;
+        gap: 20px;
+    }
+    
+    .forget-password{
+        display: flex;
+        text-align: center;
+        margin: auto;
+        color: #05466C;
+        align-items: center;
+    }
+    
+    .forget-password a{
+        color: #05466C;
+        display: flex;
+        text-align: center;
+        cursor: pointer;
+        align-items: center;
+        
+    }
+    
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 10px;
+        width: 70%;
+    }
+    
+    .save-button{
+        background-color: #05466C;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    
+    .descart-button{
+        background-color: white;
+        color: black;
+        border: solid black 1px; 
+        padding: 10px 20px; 
+        text-align: center;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    
+    .delete-account{
+        margin-top: 5%;
+        margin: auto;
+        color: #B94E4E;
+    }
+    
+    .delete-account a{
+        color: #B94E4E;
+        text-decoration: none;
+        cursor: pointer;
+        align-items: center;
+    }
+    
+    .bxs-lock-alt, .bxs-trash{
+        scale: 1.1 !important;
+    }
+    
+    h2, h3{
+        font-weight: 540;
+    }
+
+    .email{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    
+}
