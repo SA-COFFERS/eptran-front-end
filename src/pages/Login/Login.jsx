@@ -18,13 +18,17 @@ function Login() {
             <input
               type="password"
               id="password"
-              placeholder="  Senha:"
+              placeholder="  Senha: "
               className="dark-input"
             />
+
             <button>
               Seguinte
             </button>
-            <Link className="forget-password" to>Esqueci minha senha</Link>
+            <Link className="forget-password" to>
+              Esqueci minha senha
+              <i className="bx bxs-lock-alt" />
+            </Link>
             <Link to="/cadastro">
               <p className="login-text">
                 Não possui uma conta?/cadastro

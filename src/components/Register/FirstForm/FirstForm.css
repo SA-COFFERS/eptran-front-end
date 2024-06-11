@@ -26,10 +26,14 @@
 
   form{
     .main-text{
-        font-size: 2em;
         padding: 20px 10%;
         color: black;
-        text-align: justify;
+        text-align: center;
+        font-weight: bold;
+
+            p{
+                font-size: 25px;
+            }
     }
 
     .form-text{
@@ -63,31 +67,7 @@
         }
     }
 
-    .sex-options-div{
-
-
-        input{
-            width: 20px;
-            padding: 0;
-            margin: 0;
-        }
-
-        .sex-option{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        display: flex;
-        flex-direction: column;
-
-        .sex-options-section{
-            display: flex;
-            align-content: center;
-            justify-content: space-around;
-        }
-    }
+    
     p{
         color: #367BBC;
         text-align: center;
@@ -109,7 +89,7 @@
     }
 
     .main-text{
-        font-size: 1.2em !important;
+        font-size: 2em !important;
     }
   }
 
@@ -127,7 +107,7 @@
     }
 
     .main-text{
-        font-size: 1.2em !important;
+        font-size: 1.8em !important;
     }
   }
 }
