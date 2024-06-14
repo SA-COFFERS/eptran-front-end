@@ -7,7 +7,7 @@ import './FirstForm.css';
 
 function FirstForm({ setSecondForm }) {
   return (
-    <label className="first-form">
+    <div className="first-form">
       <form>
         <p className="main-text">Cadastre-se</p>
         <input type="email" id="email" placeholder=" E-mail:" className="dark-input" />
@@ -25,7 +25,7 @@ function FirstForm({ setSecondForm }) {
           </p>
         </Link>
       </form>
-    </label>
+    </div>
   );
 }
 

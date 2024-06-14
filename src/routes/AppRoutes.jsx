@@ -16,6 +16,7 @@ import DetailedNews from '../pages/DetailedNews/DetailedNews';
 import MemoryGamePage from '../pages/MemoryGamePage/MemoryGamePage';
 import MemoryGame from '../pages/MemoryGame/MemoryGame';
 import AccountInfos from '../pages/AccountInfos/AccountInfos';
+import ChangePassword from '../pages/ChangePassword/ChangePassword';
 // import { AuthProvider } from '../context/auth';
 // import PrivateRoute from './PrivateRoutes';
 
@@ -31,6 +32,7 @@ function AppRoutes() {
         <Route path="/jogo-da-memoria" element={<MemoryGame />} />
         <Route path="/conta" element={<Account />} />
         <Route path="/conta/detalhes" element={<AccountInfos />} />
+        <Route path="/conta/mudarsenha" element={<ChangePassword />} />
         <Route path="/cadastro" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sobre-nos" element={<AboutUs />} />
