@@ -10,14 +10,23 @@ function FirstForm({ setSecondForm }) {
     <div className="first-form">
       <form>
         <p className="main-text">Cadastre-se</p>
-        <input type="email" id="email" placeholder=" E-mail:" className="dark-input" />
-        <input
-          type="password"
-          id="password"
-          placeholder=" Senha:"
-          className="dark-input"
-        />
-        <input type="password" id="confirmpassword" className="dark-input" placeholder=" Confirme a senha: " />
+        <div className="email">
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" placeholder=" taldefulano@gmail.com" className="dark-input" />
+        </div>
+        <div className="password">
+          <label htmlFor="password">Senha:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder=" ***********"
+            className="dark-input"
+          />
+        </div>
+        <div className="password-confirm">
+          <label htmlFor="password-confirm">Confirme a senha</label>
+          <input type="password" id="confirmpassword" className="dark-input" placeholder=" *********** " />
+        </div>
         <button className="color-button" type="button" onClick={() => setSecondForm(true)}>Seguinte</button>
         <Link to="/login">
           <p>
