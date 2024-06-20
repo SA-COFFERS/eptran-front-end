@@ -1,8 +1,8 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
 
 import './Login.css';
 
@@ -14,13 +14,19 @@ function Login() {
         <main>
           <form>
             <p className="main-text">Login</p>
-            <input type="email" id="email" className="email-input dark-input" placeholder="  E-mail:" />
-            <input
-              type="password"
-              id="password"
-              placeholder="  Senha: "
-              className="dark-input"
-            />
+            <div className="email">
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" className="email-input dark-input" placeholder="  taldefulano@gmail.com" />
+            </div>
+            <div className="password">
+              <label htmlFor="password">Senha:</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="  ******** "
+                className="dark-input"
+              />
+            </div>
 
             <button>
               Seguinte
@@ -36,7 +42,6 @@ function Login() {
             </Link>
           </form>
         </main>
-        <Footer />
       </div>
     </>
   );

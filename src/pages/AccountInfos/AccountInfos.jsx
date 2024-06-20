@@ -7,11 +7,13 @@ import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 
 import './AccountInfos.css';
+import AlterationPopUp from '../../components/AlterationPopUp/AlterationPopUp';
 
 function AccountInfos() {
   return (
     <>
       <Header />
+      <AlterationPopUp />
       <div className="container account-infos-container">
         <main>
           <div className="title">
