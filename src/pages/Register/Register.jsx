@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
 
 import './Register.css';
 import FirstForm from '../../components/Register/FirstForm/FirstForm';
@@ -25,7 +24,6 @@ function Register() {
 
           )}
         </main>
-        <Footer />
       </div>
     </>
   );
