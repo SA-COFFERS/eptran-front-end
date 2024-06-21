@@ -7,9 +7,11 @@ import './SecondForm.css';
 function SecondForm() {
   return (
     <form className="second-form">
-      <p className="main-text">Complete seu cadastro</p>
-
-      <input className="dark-input" type="text" id="name" placeholder="  Nome completo" />
+      <p className="main-text">Complete o cadastro</p>
+      <div className="name">
+        <p className="form-text">Nome Completo:</p>
+        <input className="dark-input" type="text" id="name" placeholder="  Nome completo" />
+      </div>
       <div className="birth">
         <p className="form-text">Data de nascimento:</p>
         <input className="dark-input" type="date" id="birthday" />

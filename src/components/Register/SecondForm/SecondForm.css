@@ -19,7 +19,13 @@ a{
       font-size: 2em;
       padding: 20px 10%;
       color: black;
-      text-align: justify;
+      text-align: center;
+      font-weight: bold;
+  }
+
+  .name{
+    display: flex;
+    flex-direction: column;
   }
 
   .form-text{
@@ -68,7 +74,7 @@ a{
       }
 
       display: flex;
-      flex-direction: column;
+      
 
       .sex-options-section{
           display: flex;
