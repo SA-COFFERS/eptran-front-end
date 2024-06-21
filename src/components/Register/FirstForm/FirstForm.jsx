@@ -24,7 +24,7 @@ function FirstForm({ setSecondForm }) {
           />
         </div>
         <div className="password-confirm">
-          <label htmlFor="password-confirm">Confirme a senha</label>
+          <label htmlFor="password-confirm">Confirme a senha:</label>
           <input type="password" id="confirmpassword" className="dark-input" placeholder=" *********** " />
         </div>
         <button className="color-button" type="button" onClick={() => setSecondForm(true)}>Seguinte</button>

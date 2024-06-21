@@ -30,6 +30,7 @@
             
             .main-text{
               padding: 20px 10%;
+              margin-top: 10px;
               color: black;
               text-align: center;
               font-weight: bold;
@@ -49,7 +50,8 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    width: 80%;
+    width: 90%;
+    gap: 5px;
 }
 
 label{
@@ -70,19 +72,27 @@ label{
         color: white;
         padding: 10px;
         border-radius: 2px;
-        width: 150px;
+        width: 120px;
         margin: 20px auto;
+        height: 50px;
+        border-radius: 10px;
 
         a{
             color: white;
             text-decoration: none;
         }
+
+        
     }
 
-    
+    p:hover{
+      text-decoration: underline;
+    }
+
     p{
         color: #367BBC;
         text-align: center;
+        padding-bottom: 15px;
     }
   }
 
@@ -95,8 +105,10 @@ label{
         width: 100%;
     }
 
-    button.color-button {
-        width: auto;
+    button{
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
     }
 
     .main-text{
@@ -113,8 +125,10 @@ label{
     input, select {
         width: 100%;
     }
-    button.color-button {
-        width: auto;
+    button{
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
     }
 
     .main-text{
