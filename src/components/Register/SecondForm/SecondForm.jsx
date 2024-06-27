@@ -1,13 +1,14 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 
 import './SecondForm.css';
 
-function SecondForm() {
+function SecondForm({ setForm }) {
   return (
     <form className="second-form">
-      <p className="main-text">Complete o cadastro</p>
+      <p className="main-text">Quase lá</p>
       <div className="name">
         <p className="form-text">Nome Completo:</p>
         <input className="dark-input" type="text" id="name" placeholder="  Fulano de Tal" />
@@ -44,7 +45,7 @@ function SecondForm() {
 
       <div className="buttons">
         <button className="back-button">Voltar</button>
-        <button className="color-button finish-button"><a href="../index.html" className="finish">Finalizar</a></button>
+        <button className="color-button finish-button" onClick={() => setForm(2)}>Finalizar</button>
       </div>
 
       <a to="/login" className="login-link">

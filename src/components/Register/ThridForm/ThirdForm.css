@@ -1,0 +1,27 @@
+.third-form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 30px;
+
+    p{
+        font-size: 18px;
+    }
+
+    .main-text{
+        text-align: center;
+    }
+
+    input, select{
+        width: 100%;
+        margin: auto;
+        height: 2em;
+        border-width: 0.5px;
+        border-radius: 5px;
+    }
+
+    .cep{
+        align-items: center;
+    }
+    
+}

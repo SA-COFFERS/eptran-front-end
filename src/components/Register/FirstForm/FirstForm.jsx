@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import './FirstForm.css';
 
-function FirstForm({ setSecondForm }) {
+function FirstForm({ setForm }) {
   return (
     <div className="first-form">
       <form>
@@ -27,7 +27,7 @@ function FirstForm({ setSecondForm }) {
           <label htmlFor="password-confirm">Confirme a senha:</label>
           <input type="password" id="confirmpassword" className="dark-input" placeholder=" *********** " />
         </div>
-        <button className="color-button" type="button" onClick={() => setSecondForm(true)}>Seguinte</button>
+        <button className="color-button" type="button" onClick={() => setForm(1)}>Seguinte</button>
         <Link to="/login">
           <p>
             Já possui uma conta?/Login
