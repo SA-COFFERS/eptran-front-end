@@ -24,4 +24,67 @@
         align-items: center;
     }
     
+    .uf-city{
+        display: flex;
+        justify-content: space-between;
+
+        .uf{
+            width: 20%;
+        }
+
+        .city{
+            width: 70%;
+        }
+    }
+
+    .district-number{
+        display: flex;
+        justify-content: space-between;
+
+        .district{
+            width: 65%;
+        }
+
+        .number{
+            width: 20%;
+        }
+    }
+
+    button{
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 2px;
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .back-button{
+        color: #05466C;
+        background-color: white;
+        border-radius: 2px;
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+    }
+
+    .color-button{
+        background-color: #05466C;
+        border: none;
+    }
+
+    .login-link:hover{
+        text-decoration: underline;
+    }
+    
+    .login-link{
+        color: #367BBC;
+        text-align: center;
+        padding-bottom: 15px;
+    }
 }
